@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sala - Limpieza del Hogar</title>
+  <link rel="stylesheet" href="css/sala.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
+    </div>
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="cocina.html">Cocina</a>
+      <a href="bano.html">Baño</a>
+      <a href="sala.html">Sala</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#carrito">🛒 Carrito</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Productos para la Sala</h1>
+    <div class="productos-grid">
+      
+      <div class="card-producto">
+        <img src="imagenes/aromatizante.jpg" alt="Aromatizante" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Aromatizante</h3>
+          <p class="precio">$3.50</p>
+          <button class="boton-agregar" data-nombre="Aromatizante" data-precio="3.50">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/tapiseria.jpeg" alt="Limpiavidrios" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Limpiador de tapiceria</h3>
+          <p class="precio">$2.80</p>
+          <button class="boton-agregar" data-nombre="Limpiavidrios" data-precio="2.80">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p class="total-carrito">Total: <span id="total"></span></p>
+  </section>
+
+  <script src="js/sala.js"></script>
+</body>
+</html>

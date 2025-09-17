@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Limpieza del Hogar</title>
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
+    </div>
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="cocina.html">Cocina</a>
+      <a href="bano.html">Baño</a>
+      <a href="sala.html">Sala</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#carrito">🛒 Carrito</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contáctanos</h1>
+    <form id="form-contacto">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+
+      <button type="submit" class="boton-enviar">Enviar</button>
+    </form>
+    <p id="mensaje-exito" class="hidden">¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</p>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>

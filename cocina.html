@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cocina - Limpieza del Hogar</title>
+  <link rel="stylesheet" href="css/cocina.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
+    </div>
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="cocina.html">Cocina</a>
+      <a href="bano.html">Baño</a>
+      <a href="sala.html">Sala</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#carrito">🛒 Carrito</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Productos para la Cocina</h1>
+    <div class="productos-grid">
+      
+      <div class="card-producto">
+        <img src="imagenes/desengrasante.jpg" alt="Desengrasante" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Desengrasante</h3>
+          <p class="precio">$3.00</p>
+          <button class="boton-agregar" data-nombre="Desengrasante" data-precio="3.00">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/lavavajillas.jpg" alt="Lavavajilla" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Lavavajilla</h3>
+          <p class="precio">$2.50</p>
+          <button class="boton-agregar" data-nombre="Lavavajilla" data-precio="2.50">Agregar al Carrito</button>
+        </div>
+      </div>
+      
+      <div class="card-producto">
+        <img src="imagenes/esponjqa para cocina.jpeg" alt="Esponja" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Esponja de Cocina</h3>
+          <p class="precio">$1.50</p>
+          <button class="boton-agregar" data-nombre="Esponja de Cocina" data-precio="1.50">Agregar al Carrito</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p class="total-carrito">Total: <span id="total"></span></p>
+  </section>
+
+  <script src="js/cocina.js"></script>
+</body>
+</html>

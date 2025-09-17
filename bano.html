@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Baño - Limpieza del Hogar</title>
+  <link rel="stylesheet" href="css/bano.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
+    </div>
+    <nav>
+      <a href="inicio.html">Inicio</a>
+      <a href="cocina.html">Cocina</a>
+      <a href="bano.html">Baño</a>
+      <a href="sala.html">Sala</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#carrito">🛒 Carrito</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Productos para el Baño</h1>
+    <div class="productos-grid">
+      
+      <div class="card-producto">
+        <img src="imagenes/desinfectante.jpg" alt="Desinfectante" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Desinfectante</h3>
+          <p class="precio">$4.00</p>
+          <button class="boton-agregar" data-nombre="Desinfectante" data-precio="4.00">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/javon liquido de manos.jpg" alt="Jabón líquido" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Jabón Líquido</h3>
+          <p class="precio">$2.00</p>
+          <button class="boton-agregar" data-nombre="Jabón Líquido" data-precio="2.00">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/limpiavidrios.jpg" alt="Limpiavidrios" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Limpiador de Vidrios</h3>
+          <p class="precio">$2.80</p>
+          <button class="boton-agregar" data-nombre="Limpiador de Vidrios" data-precio="2.80">Agregar al Carrito</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p class="total-carrito">Total: <span id="total"></span></p>
+  </section>
+
+  <script src="js/bano.js"></script>
+</body>
+</html>
