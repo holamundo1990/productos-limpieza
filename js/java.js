@@ -17,6 +17,6 @@ prevBtn.addEventListener('click', () => {
 });
 
 function updateCarrusel() {
-    const offset = -currentIndex * 400; // 400px es el ancho de la imagen
+    const offset = -currentIndex * 400;
     carrusel.style.transform = `translateX(${offset}px)`;
 }

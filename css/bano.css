@@ -21,7 +21,6 @@ main {
     padding: 2rem;
 }
 
-/* Estilos de las tarjetas y el carrito, movidos de "general.css" */
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -45,8 +44,8 @@ main {
 
 .imagen-producto {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
 }
 
 .info-producto {
