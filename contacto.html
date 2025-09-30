@@ -8,15 +8,18 @@
 <body>
   <header>
     <div class="logo">
-      <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
+      <img src="imagenes/productos de hogar logo.svg" alt="Logo">
     </div>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="cocina.html">Cocina</a>
-      <a href="bano.html">Baño</a>
-      <a href="sala.html">Sala</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="#carrito">🛒 Carrito</a>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="cocina.html">Cocina</a>
+        <a href="bano.html">Baño</a>
+        <a href="sala.html">Sala</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+        <a href="#carrito">🛒 Carrito</a>
+      </div>
     </nav>
   </header>
 
@@ -43,7 +46,13 @@
     <p id="mensaje-exito" class="hidden">¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</p>
   </main>
 
-  <script src="js/main.js"></script>
   <script src="js/contacto.js"></script>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

@@ -10,10 +10,11 @@
     <div class="logo">
       <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
     </div>
-    <nav>
+    <div class="hamburger">&#9776;</div>
+    <nav class="nav-links">
       <a href="index.html">Inicio</a>
       <a href="cocina.html">Cocina</a>
-      <a href="bano.html">Baño</a>
+      <a href="bano.html" class="activo">Baño</a>
       <a href="sala.html">Sala</a>
       <a href="contacto.html">Contacto</a>
       <a href="#carrito">🛒 Carrito</a>
@@ -21,44 +22,99 @@
   </header>
 
   <main>
-    <h1>Productos para el Baño</h1>
+    <h1>Productos y Servicios de Limpieza para Baño</h1>
+    <p class="intro">Mantén tu baño impecable con nuestros productos y servicios especializados.</p>
+
     <div class="productos-grid">
-      
       <div class="card-producto">
-        <img src="imagenes/desinfectante.jpg" alt="Desinfectante" class="imagen-producto">
+        <img src="imagenes/aromatizante.jpg" alt="Desinfectante Baño" class="imagen-producto">
         <div class="info-producto">
-          <h3>Desinfectante</h3>
-          <p class="precio">$4.00</p>
-          <button class="boton-agregar" data-nombre="Desinfectante" data-precio="4.00">Agregar al Carrito</button>
+          <h3>Desinfectante Baño</h3>
+          <p class="descripcion">Elimina bacterias y mantiene tus superficies limpias y seguras.</p>
+          <p class="precio">$4.50</p>
+          <button class="boton-agregar" data-nombre="Desinfectante Baño" data-precio="4.50">Agregar al Carrito</button>
         </div>
       </div>
 
       <div class="card-producto">
-        <img src="imagenes/javon liquido de manos.jpg" alt="Jabón líquido" class="imagen-producto">
+        <img src="imagenes/limpiavidrios.jpg" alt="Limpiador de Espejos" class="imagen-producto">
         <div class="info-producto">
-          <h3>Jabón Líquido</h3>
-          <p class="precio">$2.00</p>
-          <button class="boton-agregar" data-nombre="Jabón Líquido" data-precio="2.00">Agregar al Carrito</button>
+          <h3>Limpiador de Espejos</h3>
+          <p class="descripcion">Elimina manchas y deja tus espejos relucientes sin rayones.</p>
+          <p class="precio">$3.20</p>
+          <button class="boton-agregar" data-nombre="Limpiador de Espejos" data-precio="3.20">Agregar al Carrito</button>
         </div>
       </div>
 
       <div class="card-producto">
-        <img src="imagenes/limpiavidrios.jpg" alt="Limpiador de Vidrios" class="imagen-producto">
+        <img src="imagenes/inodoro.jpg" alt="Limpiador de Inodoros" class="imagen-producto">
         <div class="info-producto">
-          <h3>Limpiador de Vidrios</h3>
-          <p class="precio">$2.80</p>
-          <button class="boton-agregar" data-nombre="Limpiador de Vidrios" data-precio="2.80">Agregar al Carrito</button>
+          <h3>Limpiador de Inodoros</h3>
+          <p class="descripcion">Mantiene tu inodoro limpio y libre de bacterias con acción rápida.</p>
+          <p class="precio">$5.00</p>
+          <button class="boton-agregar" data-nombre="Limpiador de Inodoros" data-precio="5.00">Agregar al Carrito</button>
         </div>
       </div>
-
     </div>
+
+    <section class="servicios">
+      <h2>Servicios que Ofrecemos</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="imagenes/img 23.jpg" alt="Servicio de limpieza">
+          <h3>Limpieza de Mudanza</h3>
+          <p>Limpieza exhaustiva de polvo, escombros y residuos tras una obra o mudanza.</p>
+        </div>
+        <div class="card">
+          <img src="imagenes/img 26.jpg" alt="Servicio de limpieza profunda">
+          <h3>Limpieza Profunda</h3>
+          <p>Se limpian rincones, detrás de muebles, ventanas, persianas, etc.</p>
+        </div>
+        <div class="card">
+          <img src="imagenes/img 22.jpg" alt="Limpieza de tapicería">
+          <h3>Limpieza de Tapicería</h3>
+          <p>Lavado y desinfección de sofás, sillones, alfombras y cortinas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bienvenida">
+      <h2>Bienvenidos a Productos de Limpieza de Baño</h2>
+      <p>Somos expertos en dejar tu espacio impecable. Trabajamos con productos ecológicos y personal capacitado.</p>
+      <ul>
+        <li>✔ Servicios confiables y rápidos</li>
+        <li>✔ Personal capacitado</li>
+        <li>✔ Precios accesibles</li>
+      </ul>
+    </section>
+
+    <section class="equipo">
+      <h2>Nuestros Expertos</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="imagenes/img 18.jpeg" alt="Empleado 1">
+          <p>Hannibal, especialista en limpieza residencial.</p>
+        </div>
+        <div class="card">
+          <img src="imagenes/img 18.jpeg" alt="Empleado 2">
+          <p>Carlos, experto en limpieza profunda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p class="total-carrito">Total: <span id="total"></span></p>
+    </section>
   </main>
 
-  <section id="carrito">
-    <h2>Carrito de Compras</h2>
-    <ul id="lista-carrito"></ul>
-    <p class="total-carrito">Total: <span id="total"></span></p>
-  </section>
+  <footer class="footer">
+    <div class="clientes">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <p>"Muy buen servicio, dejaron mi casa reluciente."</p>
+    </div>
+  </footer>
 
   <script src="js/bano.js"></script>
 </body>

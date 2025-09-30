@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Inicio - Limpieza del Hogar</title>
-  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -11,48 +11,68 @@
       <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
     </div>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="cocina.html">Cocina</a>
-      <a href="bano.html">Baño</a>
-      <a href="sala.html">Sala</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="#carrito">🛒 Carrito</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="cocina.html">Cocina</a>
+        <a href="bano.html">Baño</a>
+        <a href="sala.html">Sala</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="#carrito">🛒 Carrito</a>
+      </div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
     </nav>
   </header>
 
   <main>
-    <h1>Bienvenido a Limpieza del Hogar</h1>
+    <h1>Productos Destacados</h1>
 
-    <div class="carrusel-container">
-      <div class="carrusel">
-        
-        <div class="carrusel-item">
-          <img src="imagenes/desengrasante.jpg" alt="Desengrasante" width="400">
-          <div class="carrusel-caption">
-            <h3>Desengrasante para Cocina</h3>
-            <p>Elimina la grasa más difícil con facilidad.</p>
+    <div class="card-carousel-container">
+      <button id="card-prev" class="card-btn">‹</button>
+      <div class="card-carousel">
+        <div class="card-item">
+          <img src="imagenes/maxx.png" alt="Card 1">
+          <div class="card-content">
+            <h3>Card 1</h3>
+            <p>Jabón para ropa bola naturals poder de limpieza Max Poder.</p>
           </div>
         </div>
-
-        <div class="carrusel-item">
-          <img src="imagenes/limpiavidrios.jpg" alt="Limpiavidrios" width="400">
-          <div class="carrusel-caption">
-            <h3>Limpiavidrios</h3>
-            <p>Deja tus ventanas y espejos sin una sola marca.</p>
+        <div class="card-item">
+          <img src="imagenes/bolsa de basura.jpg" alt="Card 2">
+          <div class="card-content">
+            <h3>Card 2</h3>
+            <p>Bolsa de basura resistente y duradera.</p>
           </div>
         </div>
-
-        <div class="carrusel-item">
-          <img src="imagenes/jabon liquido.jpg" alt="Jabón Líquido" width="400">
-          <div class="carrusel-caption">
-            <h3>Jabón Líquido para Manos</h3>
-            <p>Limpieza y frescura para toda tu familia.</p>
+        <div class="card-item">
+          <img src="imagenes/escoba.jpg" alt="Card 3">
+          <div class="card-content">
+            <h3>Card 3</h3>
+            <p>Escoba económica para limpieza eficiente.</p>
           </div>
         </div>
-
+        <div class="card-item">
+          <img src="imagenes/guantes.jpeg" alt="Card 4">
+          <div class="card-content">
+            <h3>Card 4</h3>
+            <p>Guantes protectores para uso doméstico.</p>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="imagenes/lejia.jpg" alt="Card 5">
+          <div class="card-content">
+            <h3>Card 5</h3>
+            <p>Lejía concentrada para limpieza profunda.</p>
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="imagenes/detergente.jpg" alt="Card 6">
+          <div class="card-content">
+            <h3>Card 6</h3>
+            <p>Detergente eficaz para todo tipo de superficies.</p>
+          </div>
+        </div>
       </div>
-      <button id="prev-btn">‹</button>
-      <button id="next-btn">›</button>
+      <button id="card-next" class="card-btn">›</button>
     </div>
 
     <section class="info-section">
@@ -60,7 +80,12 @@
         <h2 class="info-title">NOTICIAS</h2>
         <div class="info-content">
           <h3 class="info-subtitle">Nueva línea de cocina</h3>
-          <p>Nueva línea de desengrasantes Nuestros desengrasantes están formulados especialmente para combatir la grasa acumulada en estufas, hornos y campanas extractoras. Con aroma cítrico y fórmula biodegradable, garantizan una cocina limpia y fresca en menos tiempo. Mantener la cocina impecable ya no es complicado. Usa trapos de microfibra para limpiar superficies sin rayarlas, esponjas multiusos para platos difíciles y cloro diluido para desinfectar fregaderos. Con solo 10 minutos diarios tu cocina puede lucir siempre brillante.</p>
+          <p>* Nueva línea ecológica
+  Descubre nuestra nueva línea de productos biodegradables que cuidan tu hogar y el medio ambiente.
+* Promoción del mes
+  20% de descuento en detergentes y desinfectantes seleccionados.
+* Evento de limpieza
+  Taller online gratuito: “Cómo mantener tu hogar impecable en menos tiempo”.</p>
         </div>
       </div>
     </section>
@@ -69,10 +94,12 @@
       <div class="info-item">
         <h2 class="info-title">TIPS</h2>
         <div class="info-content">
-          <h3 class="info-subtitle">Organización:Guarda todos tus productos de limpieza en una canasta para que los tengas a mano y no pierdas tiempo buscándolos.
-De arriba abajo: Para limpiar el polvo eficientemente, empieza por lo más alto y trabaja hacia abajo. Usa paños de microfibra para atrapar el polvo.
-Vinagre multiuso: Prepara un limpiador natural mezclando vinagre y agua para dejar las ventanas sin manchas.
-Seguridad:Siempre usa guantes cuando limpies con productos fuertes como la lejía para proteger tu piel.</h3>
+          <h3 class="info-subtitle">* Organización de la cocina
+  Usa contenedores transparentes para que todo esté visible y ordenado.
+* Trucos para el baño
+  Mezcla vinagre y bicarbonato para limpiar azulejos sin químicos agresivos.
+* Cuidado de superficies
+  Siempre limpia de arriba hacia abajo para evitar que el polvo caiga sobre áreas ya limpias.</h3>
         </div>
       </div>
     </section>
@@ -81,7 +108,12 @@ Seguridad:Siempre usa guantes cuando limpies con productos fuertes como la lejí
       <div class="info-item">
         <h2 class="info-title">INNOVACIONES</h2>
         <div class="info-content">
-          <p>Este año la innovación está enfocada en productos ecológicos y reutilizables: detergentes biodegradables, cepillos de bambú y guantes de larga duración. La meta es lograr una limpieza profunda mientras se cuida el medio ambiente y se reducen los residuos plásticos</p>
+          <p>* Tecnología antideslizante
+  Nuevas escobas con cerdas especiales que atrapan polvo y cabello.
+* Envases inteligentes
+  Botellas de detergente con dispensador medido para ahorrar producto y agua.
+* Limpieza rápida
+  Productos con fórmula rápida que eliminan manchas difíciles en minutos.</p>
         </div>
       </div>
     </section>

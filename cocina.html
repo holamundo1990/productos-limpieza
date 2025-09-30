@@ -11,46 +11,105 @@
       <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
     </div>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="cocina.html">Cocina</a>
-      <a href="bano.html">Baño</a>
-      <a href="sala.html">Sala</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="#carrito">🛒 Carrito</a>
+      <button class="hamburger">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="cocina.html">Cocina</a>
+        <a href="bano.html">Baño</a>
+        <a href="sala.html">Sala</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="#carrito">🛒 Carrito</a>
+      </div>
     </nav>
   </header>
 
+  <section class="carrusel">
+    <h2>Productos de Cocina</h2>
+    <div class="carrusel-container">
+      <button class="carrusel-btn" id="prev">&#10094;</button>
+      <div class="carrusel-track">
+        <div class="carrusel-item"><img src="imagenes/desengrasante.jpg" alt="Desengrasante"><p>Desengrasante</p></div>
+        <div class="carrusel-item"><img src="imagenes/lavavajillas.jpg" alt="Lavavajilla"><p>Lavavajilla</p></div>
+        <div class="carrusel-item"><img src="imagenes/esponjas.jpg" alt="Esponja"><p>Esponja</p></div>
+        <div class="carrusel-item"><img src="imagenes/trapos multiuso.jpg" alt="Trapo Cocina"><p>Trapo de Cocina</p></div>
+        <div class="carrusel-item"><img src="imagenes/guantes1.jpg" alt="Guantes"><p>Guantes de Cocina</p></div>
+        <div class="carrusel-item"><img src="imagenes/limpiador multiuso.jpg" alt="Limpiador Multiusos"><p>Limpiador Multiusos</p></div>
+      </div>
+      <button class="carrusel-btn" id="next">&#10095;</button>
+    </div>
+  </section>
+
   <main>
-    <h1>Productos para la Cocina</h1>
+    <h1>Todos los Productos de Limpieza para Cocina</h1>
     <div class="productos-grid">
-      
       <div class="card-producto">
+        <span class="etiqueta-nuevo">Nuevo</span>
         <img src="imagenes/desengrasante.jpg" alt="Desengrasante" class="imagen-producto">
         <div class="info-producto">
           <h3>Desengrasante</h3>
+          <p class="descripcion">Limpia grasa y suciedad difícil de ollas, estufas y superficies.</p>
+          <p class="detalle">Contenido: 500ml | Uso: Cocina y superficies metálicas</p>
           <p class="precio">$3.00</p>
           <button class="boton-agregar" data-nombre="Desengrasante" data-precio="3.00">Agregar al Carrito</button>
         </div>
       </div>
 
       <div class="card-producto">
+        <span class="etiqueta-vendido">Más vendido</span>
         <img src="imagenes/lavavajillas.jpg" alt="Lavavajilla" class="imagen-producto">
         <div class="info-producto">
           <h3>Lavavajilla</h3>
+          <p class="descripcion">Ideal para lavar platos sin esfuerzo y deja un aroma agradable.</p>
+          <p class="detalle">Contenido: 750ml | Uso: Manual y lavavajillas</p>
           <p class="precio">$2.50</p>
           <button class="boton-agregar" data-nombre="Lavavajilla" data-precio="2.50">Agregar al Carrito</button>
         </div>
       </div>
-      
+
       <div class="card-producto">
-        <img src="imagenes/esponjqa para cocina.jpeg" alt="Esponja" class="imagen-producto">
+        <img src="imagenes/esponjas.jpg" alt="Esponja" class="imagen-producto">
         <div class="info-producto">
           <h3>Esponja de Cocina</h3>
+          <p class="descripcion">Esponja resistente para ollas y sartenes sin rayar.</p>
+          <p class="detalle">Uso: Todos los utensilios | Durabilidad: 1 mes aprox.</p>
           <p class="precio">$1.50</p>
           <button class="boton-agregar" data-nombre="Esponja de Cocina" data-precio="1.50">Agregar al Carrito</button>
         </div>
       </div>
 
+      <div class="card-producto">
+        <img src="imagenes/trapos multiuso.jpg" alt="Trapo Cocina" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Trapo de Cocina</h3>
+          <p class="descripcion">Trapo absorbente para limpiar superficies y derrames.</p>
+          <p class="detalle">Material: Microfibra | Tamaño: 30x30 cm</p>
+          <p class="precio">$1.20</p>
+          <button class="boton-agregar" data-nombre="Trapo de Cocina" data-precio="1.20">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <span class="etiqueta-nuevo">Nuevo</span>
+        <img src="imagenes/guantes3.jpg" alt="Guantes" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Guantes de Cocina</h3>
+          <p class="descripcion">Protege tus manos al lavar platos o manipular químicos.</p>
+          <p class="detalle">Material: Látex | Talla: Única</p>
+          <p class="precio">$2.00</p>
+          <button class="boton-agregar" data-nombre="Guantes de Cocina" data-precio="2.00">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/limpiador multiuso.jpg" alt="Limpiador Multiusos" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Limpiador Multiusos</h3>
+          <p class="descripcion">Perfecto para limpiar mesas, estufas y superficies de cocina.</p>
+          <p class="detalle">Contenido: 600ml | Uso: Cocina y baño</p>
+          <p class="precio">$3.50</p>
+          <button class="boton-agregar" data-nombre="Limpiador Multiusos" data-precio="3.50">Agregar al Carrito</button>
+        </div>
+      </div>
     </div>
   </main>
 

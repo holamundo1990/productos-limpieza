@@ -8,37 +8,86 @@
 <body>
   <header>
     <div class="logo">
-      <img src="imagenes/productos de hogar logo.svg" alt="Logo" height="50">
+      <img src="imagenes/productos de hogar logo.svg" alt="Logo">
     </div>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="cocina.html">Cocina</a>
-      <a href="bano.html">Baño</a>
-      <a href="sala.html">Sala</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="#carrito">🛒 Carrito</a>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="cocina.html">Cocina</a>
+        <a href="bano.html">Baño</a>
+        <a href="sala.html" class="activo">Sala</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="#carrito">🛒 Carrito</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <h1>Productos para la Sala</h1>
+    <p class="intro">
+      Descubre nuestros productos diseñados para mantener tu sala impecable, fresca y acogedora.
+    </p>
+
     <div class="productos-grid">
-      
+
       <div class="card-producto">
         <img src="imagenes/aromatizante.jpg" alt="Aromatizante" class="imagen-producto">
         <div class="info-producto">
           <h3>Aromatizante</h3>
+          <p class="descripcion">Mantén tu sala siempre fresca con un aroma agradable y duradero.</p>
           <p class="precio">$3.50</p>
           <button class="boton-agregar" data-nombre="Aromatizante" data-precio="3.50">Agregar al Carrito</button>
         </div>
       </div>
 
       <div class="card-producto">
-        <img src="imagenes/tapiseria.jpeg" alt="Limpiador de tapiceria" class="imagen-producto">
+        <img src="imagenes/tapiseria.jpeg" alt="Limpiador de tapicería" class="imagen-producto">
         <div class="info-producto">
-          <h3>Limpiador de tapiceria</h3>
+          <h3>Limpiador de Tapicería</h3>
+          <p class="descripcion">Elimina manchas difíciles sin dañar los tejidos de tus muebles.</p>
           <p class="precio">$2.80</p>
-          <button class="boton-agregar" data-nombre="Limpiador de tapiceria" data-precio="2.80">Agregar al Carrito</button>
+          <button class="boton-agregar" data-nombre="Limpiador de Tapicería" data-precio="2.80">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/desinfectante.jpg" alt="Desinfectante multisuperficie" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Desinfectante Multisuperficie</h3>
+          <p class="descripcion">Protege tu sala eliminando el 99.9% de bacterias y virus.</p>
+          <p class="precio">$4.20</p>
+          <button class="boton-agregar" data-nombre="Desinfectante" data-precio="4.20">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/paño.jpg" alt="Paños de microfibra" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Paños de Microfibra</h3>
+          <p class="descripcion">Ideales para limpiar superficies sin dejar pelusa ni rayones.</p>
+          <p class="precio">$1.90</p>
+          <button class="boton-agregar" data-nombre="Paños de Microfibra" data-precio="1.90">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/trapeador adsorvente.jpeg" alt="Trapeador absorbente" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Trapeador Absorbente</h3>
+          <p class="descripcion">Absorbe líquidos y limpia profundamente en menos tiempo.</p>
+          <p class="precio">$5.75</p>
+          <button class="boton-agregar" data-nombre="Trapeador Absorbente" data-precio="5.75">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <div class="card-producto">
+        <img src="imagenes/aspiradora.jpeg" alt="Mini aspiradora portátil" class="imagen-producto">
+        <div class="info-producto">
+          <h3>Mini Aspiradora Portátil</h3>
+          <p class="descripcion">Compacta y potente, ideal para limpiar sofás y alfombras.</p>
+          <p class="precio">$25.00</p>
+          <button class="boton-agregar" data-nombre="Mini Aspiradora" data-precio="25.00">Agregar al Carrito</button>
         </div>
       </div>
     </div>

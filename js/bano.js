@@ -15,9 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
         listaCarrito.innerHTML = '';
         let total = 0;
 
-        carrito.forEach(producto => {
+        carrito.forEach((producto, index) => {
             const li = document.createElement('li');
-            li.innerHTML = `${producto.nombre} - $${producto.precio.toFixed(2)} <button class="eliminar-item" data-nombre="${producto.nombre}">Eliminar</button>`;
+            li.innerHTML = `
+                <span><strong>${producto.nombre}</strong> - $${producto.precio.toFixed(2)}</span>
+                <button class="eliminar-item" data-index="${index}">❌</button>
+            `;
             listaCarrito.appendChild(li);
             total += producto.precio;
         });
@@ -36,20 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             guardarCarritoEnLocalStorage(carrito);
             mostrarCarrito(carrito);
-            
-            alert(`${nombre} ha sido agregado al carrito.`);
+
+            const msg = document.createElement('div');
+            msg.textContent = `${nombre} agregado al carrito ✅`;
+            msg.className = "toast-msg";
+            document.body.appendChild(msg);
+            setTimeout(() => msg.remove(), 2000);
         });
     });
 
-    document.getElementById('lista-carrito').addEventListener('click', (e) => {
+    listaCarrito.addEventListener('click', (e) => {
         if (e.target.classList.contains('eliminar-item')) {
-            const nombre = e.target.dataset.nombre;
+            const index = e.target.dataset.index;
             let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-            
-            const index = carrito.findIndex(p => p.nombre === nombre);
-            if (index > -1) {
-                carrito.splice(index, 1);
-            }
+
+            carrito.splice(index, 1);
 
             guardarCarritoEnLocalStorage(carrito);
             mostrarCarrito(carrito);
@@ -57,4 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     cargarCarritoDesdeLocalStorage();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 });
